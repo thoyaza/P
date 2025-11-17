@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>Forum Page</title>
+<style>
+/* ملء الشاشة بالكامل وإزالة الهوامش */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* توسيط الفورم داخل الصفحة */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5; /* لون خلفية خفيف */
+}
+
+form {
+    width: 80%;
+    max-width: 600px;
+}
+
+/* جدول بدون حدود */
+table {
+    width: 100%;
+    border-collapse: collapse; /* إزالة المسافات بين الخلايا */
+}
+
+/* توزيع الأعمدة */
+td:first-child {
+    width: 75%;
+}
+
+td:last-child {
+    width: 25%;
+    text-align: right; /* يجعل النص في العمود الثاني على اليمين */
+    padding-left: 10px;
+}
+
+/* تنسيق الحقول */
+input[type="text"], textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* زر الإرسال */
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+</style>
+</head>
+<body>
+
+<form>
+<table>
+<tr>
+  <td><input type="text" name="name" placeholder="ادخل اسمك" required></td>
+  <td>:الاسم</td>
+</tr>
+<tr>
+  <td><input type="text" name="email" placeholder="ادخل بريدك" required></td>
+  <td>:البريد الإلكتروني</td>
+</tr>
+<tr>
+  <td><input type="text" name="subject" placeholder="ادخل الموضوع" required></td>
+  <td>:الموضوع</td>
+</tr>
+<tr>
+  <td><textarea name="message" rows="5" placeholder="اكتب رسالتك" required></textarea></td>
+  <td>:الرسالة</td>
+</tr>
+<tr>
+  <td><input type="submit" value="إرسال"></td>
+  <td></td>
+</tr>
+</table>
+</form>
+
+</body>
+</html>
